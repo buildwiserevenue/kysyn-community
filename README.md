@@ -2,8 +2,8 @@
 🌌 Official community hub for KYSYN. Roadmap, bug reports, and feedback for the Neural Backbone for Local Code Intelligence. Powered by the Ouroboros Protocol.
 
 <p align="center">
-  <img src="assets/logo-dark.svg#gh-dark-mode-only" width="180" alt="KYSYN Logo">
-  <img src="assets/logo-light.svg#gh-light-mode-only" width="180" alt="KYSYN Logo">
+  <img src="assets/kysyn-logo-dark.png#gh-dark-mode-only" width="180" alt="KYSYN Logo">
+  <img src="assets/kysyn-logo-light.svg#gh-light-mode-only" width="180" alt="KYSYN Logo">
 </p>
 
 <h1 align="center">KYSYN</h1>
