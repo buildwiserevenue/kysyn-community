@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "💬 General Questions & Support"
+    url: https://github.com/buildwiserevenue/kysyn-community/discussions
+    about: "For architectural questions, setup help, or general feedback."
+  - name: "🔐 Security Vulnerabilities"
+    url: mailto:security@kysyn.dev
+    about: "If you found a security flaw, please report it privately."
