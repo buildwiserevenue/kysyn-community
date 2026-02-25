@@ -6,7 +6,7 @@
   <img src="assets/kysyn-logo-light.svg#gh-light-mode-only" width="180" alt="KYSYN Logo">
 </p>
 
-<h1 align="center">KYSYN</h1>
+<h1 align="center">Powered by the Ouroboros Protocol</h1>
 <p align="center"><strong>The Neural Backbone for Local Code Intelligence</strong></p>
 <p align="center"><em>Zero Cloud. Zero Latency. Maximum Precision.</em></p>
 
