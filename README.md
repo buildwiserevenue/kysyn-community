@@ -121,6 +121,17 @@ The KYSYN source code is **proprietary** and is not hosted in this repository. H
 
 ---
 
+## ⚖️ Legal & Attributions
+
+KYSYN is a local-first application committed to user privacy. 
+- **Privacy:** [kysyn.dev/privacy](https://kysyn.dev/privacy)
+- **Terms:** [kysyn.dev/terms](https://kysyn.dev/terms)
+- **Cookies:** [kysyn.dev/cookie](https://kysyn.dev/cookie)
+
+For a detailed list of the open-source models and libraries that power the Neural Backbone, please see our [ATTRIBUTION.md](./ATTRIBUTION.md) file.
+
+---
+
 ## 📜 License
 
 The content of this repository (documentation and discussions) is released under the **MIT License**.
