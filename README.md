@@ -6,7 +6,7 @@
   <img src="assets/kysyn-logo-light.svg#gh-light-mode-only" width="180" alt="KYSYN Logo">
 </p>
 
-<h1 align="center">Powered by the Ouroboros Protocol</h1>
+<h1 align="center">KYSYN — Powered by the Ouroboros Protocol</h1>
 <p align="center"><strong>The Neural Backbone for Local Code Intelligence</strong></p>
 <p align="center"><em>Zero Cloud. Zero Latency. Maximum Precision.</em></p>
 
@@ -41,6 +41,60 @@ KYSYN acts as the neural infrastructure between your code and your favorite AI:
 
 ---
 
+🛠️ High-Level Architecture
+KYSYN isn't just a search engine; it's a multi-layered intelligence pipeline designed to deliver surgical context to your AI. By combining AST parsing, Vector embeddings, and Graph analysis, it creates a persistent "Neural Backbone" of your local codebase.
+
+🛰️ Intelligent Retrieval Strategies
+KYSYN dynamically orchestrates its power through two distinct operational modes, ensuring the AI always has the right "altitude" of information:
+
+🎯 Sniper Mode (Deep-Dive Precision)
+Used for pinpointing exact logic and granular understanding.
+
+Best for: Finding specific function implementations, tracing local variable dependencies, and understanding "how this exact line works."
+
+How it works: It uses hybrid search (Vector + FTS5) to locate the target and then expands the context using Symbolic Callers to show how that specific piece is connected to its immediate surroundings.
+
+🚁 Drone Mode (Architectural Mapping)
+Used for high-level overviews and structural analysis.
+
+Best for: Identifying legacy code clusters, planning large-scale refactorings, or untangling monolithic structures.
+
+How it works: It bypasses granular noise and focuses on the Knowledge Graph. By extracting the top nodes via PageRank, it provides a "Skeleton Mode" view of your modules, directories, and architectural boundaries.
+
+🧬 The Ouroboros Difference
+Standard AI tools treat code as flat text. KYSYN's internal engine treats it as a living system:
+
+Structural Awareness: Uses Tree-sitter for deep AST parsing to map every symbol and relation.
+
+Temporal Intelligence: Factors in local Git Metadata to prioritize active code over stale logic.
+
+Zero-Leak Policy: Every stage of the pipeline—from ingestion to retrieval—runs 100% on your local hardware.
+
+```mermaid
+
+graph TD
+    subgraph Local_Infrastructure [Private & Local Environment]
+        A[Codebase] --> B[Ouroboros Ingestion]
+        B --> C{Hybrid Knowledge Base}
+        C --> D[(AST & Symbolic Graph)]
+        C --> E[(Vector Embeddings)]
+        C --> F[(Temporal Git Metadata)]
+    end
+
+    subgraph Intelligence_Layer [Adaptive Context Delivery]
+        G[User Query] --> H{KYSYN Orchestrator}
+        D & E & F --> H
+        H --> I[Surgical MCP Context]
+    end
+
+    I --> J[AI Assistant]
+
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    style H fill:#bbf,stroke:#333,stroke-width:2px
+    
+```
+
+---
 ## 📅 Future & Roadmap
 
 KYSYN’s future is driven by its community. 
