@@ -138,4 +138,8 @@ The content of this repository (documentation and discussions) is released under
 The **KYSYN software** is distributed under the **KYSYN Commercial License** and is available for purchase at [kysyn.dev](https://kysyn.dev).
 
 ---
-<p align="center">Built with ❤️ for developers who value privacy and precision.</p>
+<p align="center">KYSYN is built with ❤️ by a **Solo Dev** focused on bringing high-performance AI directly to the developer's local environment. No cloud traps, no data leaks. Just pure code intelligence. </p>
+
+---
+
+<p>© 2026 KYSYN. All rights reserved. </p>
