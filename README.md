@@ -12,9 +12,9 @@
 
 <p align="center">
   <a href="https://kysyn.dev"><strong>Official Website</strong></a> |
-  <a href="#-how-to-get-help"><strong>Get Help</strong></a> |
-  <a href="#-future--roadmap"><strong>Roadmap</strong></a> |
-  <a href="https://kysyn.dev/buy"><strong>Buy License</strong></a>
+  <a href="https://github.com/buildwiserevenue/kysyn-community/discussions"><strong>Get Help</strong></a> |
+  <a href="https://github.com/users/buildwiserevenue/projects/1"><strong>Roadmap</strong></a> |
+  <a href="https://kysyn.dev/"><strong>Buy License</strong></a>
 </p>
 
 ---
@@ -61,8 +61,11 @@ Best for: Identifying legacy code clusters, planning large-scale refactorings, o
 
 How it works: It bypasses granular noise and focuses on the Knowledge Graph. By extracting the top nodes via PageRank, it provides a "Skeleton Mode" view of your modules, directories, and architectural boundaries.
 
-🧬 The Ouroboros Difference
-Standard AI tools treat code as flat text. KYSYN's internal engine treats it as a living system:
+🧬 The Ouroboros Protocol
+Standard AI tools treat code as flat text. KYSYN's internal engine treats it as a living system.
+
+Meanwhile, I develop KYSYN using KYSYN. The engine indexes its own source code to provide the LLM with surgical context about its own architecture. 
+This recursive feedback loop ensures that the semantic mapping is battle-tested on a complex codebase (this one).
 
 Structural Awareness: Uses Tree-sitter for deep AST parsing to map every symbol and relation.
 
@@ -74,7 +77,7 @@ Zero-Leak Policy: Every stage of the pipeline—from ingestion to retrieval—ru
 
 graph TD
     subgraph Local_Infrastructure [Private & Local Environment]
-        A[Codebase] --> B[Ouroboros Ingestion]
+        A[Codebase] --> B[KYSYN Ingestion]
         B --> C{Hybrid Knowledge Base}
         C --> D[(AST & Symbolic Graph)]
         C --> E[(Vector Embeddings)]
@@ -98,7 +101,7 @@ graph TD
 ## 📅 Future & Roadmap
 
 KYSYN’s future is driven by its community. 
-- 📍 **Public Roadmap:** [Link to your GitHub Projects Board]
+- 📍 **Public Roadmap:** [https://github.com/users/buildwiserevenue/projects/1]
 - 💡 **Suggestions:** Open a "Feature Request" in the Issues tab to propose new capabilities.
 
 ---
