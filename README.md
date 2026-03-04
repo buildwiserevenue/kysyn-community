@@ -101,7 +101,7 @@ graph TD
 ## 📅 Future & Roadmap
 
 KYSYN’s future is driven by its community. 
-- 📍 **Public Roadmap:** [https://github.com/users/buildwiserevenue/projects/1]
+- 📍 **Public Roadmap:** [KYSYN Roadmap](https://github.com/users/buildwiserevenue/projects/1)
 - 💡 **Suggestions:** Open a "Feature Request" in the Issues tab to propose new capabilities.
 
 ---
