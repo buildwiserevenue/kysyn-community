@@ -26,6 +26,9 @@ A clear and concise description of what the bug is.
 A clear description of what you expected to happen.
 
 ## 📁 Logs & Screenshots
-> **Warning:** Please redact any sensitive information (API keys, private paths) from your logs before posting.
+> **Tip:** the KYSYN app can package a **support bundle** for you (Diagnostics → Support Bundle): it collects the relevant logs, scrubs sensitive data, and shows you a preview of everything included **before** anything is saved. Attach it here.
+
+> **Warning:** if you paste logs manually instead, please redact any sensitive information (keys, private paths) first.
 ```text
 [Paste relevant logs here]
+```
