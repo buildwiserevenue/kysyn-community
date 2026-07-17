@@ -8,99 +8,63 @@
 
 <h1 align="center">KYSYN — Powered by the Ouroboros Protocol</h1>
 <p align="center"><strong>The Neural Backbone for Local Code Intelligence</strong></p>
-<p align="center"><em>Zero Cloud. Zero Latency. Maximum Precision.</em></p>
+<p align="center"><em>Deterministic by design. Verifiable by anyone.</em></p>
 
 <p align="center">
   <a href="https://kysyn.dev"><strong>Official Website</strong></a> |
   <a href="https://github.com/buildwiserevenue/kysyn-community/discussions"><strong>Get Help</strong></a> |
   <a href="https://github.com/users/buildwiserevenue/projects/1"><strong>Roadmap</strong></a> |
-  <a href="https://kysyn.dev/"><strong>Buy License</strong></a>
+  <a href="https://kysyn.dev/#pricing"><strong>Buy License</strong></a>
 </p>
 
 ---
 
 ## 🚀 What is KYSYN?
 
-KYSYN is the native **MCP (Model Context Protocol)** semantic engine that transforms your local codebase into a queryable knowledge graph. Unlike common AI assistants that treat code as flat text, KYSYN understands deep structures (AST), cross-file relationships, and logical semantics.
+KYSYN turns your local codebase into a **deterministic map of its real connections** — who calls what, what depends on what, what breaks if you change this — and serves that truth to you and to your AI.
 
-### 🧠 Why KYSYN?
-Traditional AI assistants often fail because they lack architectural awareness. KYSYN solves this by providing:
-- **Surgical Precision:** Beyond vector search—Tri-Hybrid analysis (AST + Vectors + Relationship Graph).
-- **Total Privacy:** Runs 100% offline on your hardware. No data ever leaves your machine.
-- **Universal Integration:** As an MCP-native tool, it instantly connects to **Cursor, Claude Desktop, Zed**, and any compatible environment.
+An LLM cannot see your codebase. It sees fragments and **imagines the rest**: which functions call which, whether "refactor complete" is actually true. Imagining connections has a name — *hallucination*. KYSYN removes the guesswork: every connection on the map is real, and every claim can be checked against it.
 
----
-
-## 🛠️ How It Works (High-Level)
-
-KYSYN acts as the neural infrastructure between your code and your favorite AI:
-
-1. **Ingestion:** KYSYN parses your files locally, building an optimized SQLite-backed graph.
-2. **Intelligence:** It extracts symbols, functions, and dependencies to understand "who calls what."
-3. **Delivery:** It serves only the perfect, necessary context to the AI, slashing hallucinations and token waste.
+- **A map, not a guess:** deterministic structure of your project's actual connections — zero fabricated links.
+- **Three-state verdict:** code is judged **live / uncertain / dead** — never a blind yes/no that hides the truth.
+- **Total privacy:** runs 100% on your machine. Your code never leaves it.
 
 ---
 
-🛠️ High-Level Architecture
-KYSYN isn't just a search engine; it's a multi-layered intelligence pipeline designed to deliver surgical context to your AI. By combining AST parsing, Vector embeddings, and Graph analysis, it creates a persistent "Neural Backbone" of your local codebase.
+## 🖥️ What You Get
 
-🛰️ Intelligent Retrieval Strategies
-KYSYN dynamically orchestrates its power through two distinct operational modes, ensuring the AI always has the right "altitude" of information:
+Two surfaces, one graph:
 
-🎯 Sniper Mode (Deep-Dive Precision)
-Used for pinpointing exact logic and granular understanding.
+1. **The Desktop App** — fly through your codebase like a galaxy: modules as constellations, connections as they actually exist, from architecture overview down to a single function.
+2. **The MCP Server** — plug KYSYN into **Cursor, Claude Code, Claude Desktop, Zed**, or any MCP-compatible environment. Your AI answers from the map instead of imagining — and its "done / connected / removed" claims can be verified against reality.
 
-Best for: Finding specific function implementations, tracing local variable dependencies, and understanding "how this exact line works."
-
-How it works: It uses hybrid search (Vector + FTS5) to locate the target and then expands the context using Symbolic Callers to show how that specific piece is connected to its immediate surroundings.
-
-🚁 Drone Mode (Architectural Mapping)
-Used for high-level overviews and structural analysis.
-
-Best for: Identifying legacy code clusters, planning large-scale refactorings, or untangling monolithic structures.
-
-How it works: It bypasses granular noise and focuses on the Knowledge Graph. By extracting the top nodes via PageRank, it provides a "Skeleton Mode" view of your modules, directories, and architectural boundaries.
-
-🧬 The Ouroboros Protocol
-Standard AI tools treat code as flat text. KYSYN's internal engine treats it as a living system.
-
-Meanwhile, I develop KYSYN using KYSYN. The engine indexes its own source code to provide the LLM with surgical context about its own architecture. 
-This recursive feedback loop ensures that the semantic mapping is battle-tested on a complex codebase (this one).
-
-Structural Awareness: Uses Tree-sitter for deep AST parsing to map every symbol and relation.
-
-Temporal Intelligence: Factors in local Git Metadata to prioritize active code over stale logic.
-
-Zero-Leak Policy: Every stage of the pipeline—from ingestion to retrieval—runs 100% on your local hardware.
-
-```mermaid
-
-graph TD
-    subgraph Local_Infrastructure [Private & Local Environment]
-        A[Codebase] --> B[KYSYN Ingestion]
-        B --> C{Hybrid Knowledge Base}
-        C --> D[(AST & Symbolic Graph)]
-        C --> E[(Vector Embeddings)]
-        C --> F[(Temporal Git Metadata)]
-    end
-
-    subgraph Intelligence_Layer [Adaptive Context Delivery]
-        G[User Query] --> H{KYSYN Orchestrator}
-        D & E & F --> H
-        H --> I[Surgical MCP Context]
-    end
-
-    I --> J[AI Assistant]
-
-    style B fill:#f9f,stroke:#333,stroke-width:2px
-    style H fill:#bbf,stroke:#333,stroke-width:2px
-    
-```
+**Coverage:** 20 code languages with the full three-state verdict — plus 25+ config, build and frontend formats (package manifests, CI pipelines, Docker, and more) wired into the same graph, so the map spans the layer most tools ignore.
 
 ---
+
+## ⚙️ How It Works
+
+1. **Index.** Point KYSYN at your project. It builds the map locally — every symbol, every real connection, across code *and* the config/build layer that wires it together.
+2. **Judge.** Every symbol gets a three-state verdict: **live** (provably reached), **uncertain** (there is evidence, but not proof — resolve it, don't delete it), **dead** (zero signal). Never a blind yes/no: the uncertain bucket is where honest tools admit what a binary verdict would fake.
+3. **Navigate & serve.** You explore the map visually in the desktop app; your AI queries the same map over MCP — who calls this, what breaks if I change it, is this really dead — and gets answers backed by the graph, not by imagination. When your agent claims "done / connected / removed", the map is the counter-question it cannot talk its way around.
+
+Nothing is sampled, nothing is guessed: re-index the same code and you get the same map. That's what *deterministic* means here — and why the verdicts are worth trusting.
+
+📚 Full usage documentation: [kysyn.dev/docs](https://kysyn.dev/docs/quickstart/)
+
+---
+
+## 🧬 The Ouroboros Protocol
+
+KYSYN is built and tested **on itself**: the engine indexes its own source code, and its verdicts gate its own development — the ouroboros eating its own tail. Every release ships only after the map of a complex, real codebase (this one) proves correct.
+
+That is also why the claims are verifiable by *you*: the same verdicts KYSYN produces for its own code, it produces for public repositories anyone can index. See the proof on the [website](https://kysyn.dev/#proof).
+
+---
+
 ## 📅 Future & Roadmap
 
-KYSYN’s future is driven by its community. 
+KYSYN's future is driven by its community.
 - 📍 **Public Roadmap:** [KYSYN Roadmap](https://github.com/users/buildwiserevenue/projects/1)
 - 💡 **Suggestions:** Open a "Feature Request" in the Issues tab to propose new capabilities.
 
@@ -110,7 +74,7 @@ KYSYN’s future is driven by its community.
 
 Found a bug or need technical support?
 1. Check existing **Issues** to see if the problem is already being tracked.
-2. Open a **New Issue** providing logs (scrubbed of sensitive data) and steps to reproduce.
+2. Open a **New Issue** providing logs (scrubbed of sensitive data) and steps to reproduce. The app can package a support bundle for you — you review its contents before sharing anything.
 3. For license or billing inquiries, please contact `support@kysyn.dev`.
 
 ---
@@ -124,14 +88,13 @@ The KYSYN source code is **proprietary** and is not hosted in this repository. H
 
 ---
 
-## ⚖️ Legal & Attributions
+## ⚖️ Legal
 
-KYSYN is a local-first application committed to user privacy. 
-- **Privacy:** [kysyn.dev/privacy](https://kysyn.dev/privacy)
-- **Terms:** [kysyn.dev/terms](https://kysyn.dev/terms)
-- **Cookies:** [kysyn.dev/cookie](https://kysyn.dev/cookie)
-
-For a detailed list of the open-source models and libraries that power the Neural Backbone, please see our [ATTRIBUTION.md](./ATTRIBUTION.md) file.
+KYSYN is a local-first application committed to user privacy.
+- **Privacy:** [kysyn.dev/legal/privacy](https://kysyn.dev/legal/privacy)
+- **Terms:** [kysyn.dev/legal/terms](https://kysyn.dev/legal/terms)
+- **Cookies:** [kysyn.dev/legal/cookies](https://kysyn.dev/legal/cookies)
+- **Refunds:** [kysyn.dev/legal/refund](https://kysyn.dev/legal/refund)
 
 ---
 
@@ -141,8 +104,9 @@ The content of this repository (documentation and discussions) is released under
 The **KYSYN software** is distributed under the **KYSYN Commercial License** and is available for purchase at [kysyn.dev](https://kysyn.dev).
 
 ---
-<p align="center">KYSYN is built with ❤️ by a **Solo Dev** focused on bringing high-performance AI directly to the developer's local environment. No cloud traps, no data leaks. Just pure code intelligence. </p>
+
+<p align="center">KYSYN is built with ❤️ by a <strong>solo developer</strong> — and that is exactly why trust is never asked for, only verified. No cloud traps, no data leaks. Just pure code intelligence.</p>
 
 ---
 
-<p>© 2026 KYSYN. All rights reserved. </p>
+<p>© 2026 KYSYN. All rights reserved.</p>
