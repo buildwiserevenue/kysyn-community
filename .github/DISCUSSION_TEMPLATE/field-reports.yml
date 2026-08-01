@@ -17,9 +17,11 @@ body:
     attributes:
       label: Would you recommend it?
       options:
-        - Yes
-        - Yes, with caveats
-        - Not yet
+        # Every option is quoted on purpose: bare Yes/No/On/Off/True/False are
+        # BOOLEANS in YAML, and GitHub rejects a form whose options aren't strings.
+        - "Yes"
+        - "Yes, with caveats"
+        - "Not yet"
         - "No"
     validations:
       required: true
