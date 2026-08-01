@@ -100,8 +100,9 @@ KYSYN is a local-first application committed to user privacy.
 
 ## 📜 License
 
-The content of this repository (documentation and discussions) is released under the **MIT License**.
-The **KYSYN software** is distributed under the **KYSYN Commercial License** and is available for purchase at [kysyn.dev](https://kysyn.dev).
+The documentation we write in this repository (this README and the issue and discussion templates) is released under the **MIT License**.
+
+Three things it does **not** cover: the **KYSYN software**, which is proprietary and distributed under the **KYSYN Commercial License**, available for purchase at [kysyn.dev](https://kysyn.dev); the **KYSYN name and logos**, which are trademarks and are not licensed here; and everything **you** write — your issues, discussions and reviews stay yours, and a review is quoted on our site only with your explicit consent and a link back to your original thread.
 
 ---
 
