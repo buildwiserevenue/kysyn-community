@@ -1,9 +1,26 @@
-IMPORTANT: This license applies ONLY to the documentation, issues, and assets 
-contained within this repository. 
+IMPORTANT — READ THIS FIRST. The MIT terms below apply ONLY to the
+documentation written by us in this repository: the README and the issue and
+discussion templates.
 
-The KYSYN software itself is a proprietary product and is NOT licensed under 
-the MIT terms. Access to and use of the KYSYN application is governed 
-exclusively by the KYSYN Commercial License available at https://kysyn.dev.
+They do NOT apply to:
+
+  1. THE KYSYN SOFTWARE. KYSYN is a proprietary product and is NOT licensed
+     under the MIT terms. Access to and use of the KYSYN application are
+     governed exclusively by the KYSYN Commercial License, available at
+     https://kysyn.dev.
+
+  2. BRAND ASSETS AND NAMES. The KYSYN name, the KYSYN logos (including every
+     file under `assets/`), and any other trade name, trademark, service mark
+     or product name of the copyright holder are NOT covered by this license.
+     No right or permission to use them is granted here, whether expressly, by
+     implication, by estoppel or otherwise. Referring to the product by name
+     when writing or talking about it is, of course, fine.
+
+  3. CONTENT WRITTEN BY OTHER PEOPLE. Issues, discussions, reviews and comments
+     posted in this repository remain the property of their respective authors,
+     under GitHub's Terms of Service. We do not — and cannot — relicense them.
+     A review is quoted on kysyn.dev only with its author's explicit consent,
+     verbatim, and with a link back to the original thread.
 -------------------------------------------------------------------------------
 MIT License
 
